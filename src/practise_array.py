@@ -18,4 +18,3 @@ if __name__ == '__main__':
     solution = Solution()
     res1 = solution.least_length_subarray(nums, val)
     print(res1)
-

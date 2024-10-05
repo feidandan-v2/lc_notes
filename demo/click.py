@@ -18,13 +18,13 @@ import click
 def run(arg_1:str, enable_x:bool) -> None:
     """..."""
     name = arg_1
-    
+
     if enable_x:
         print(f"{name} turns on X")
     else:
         print(f"{name} turns off X")
-    
-    return 
+
+    return
 
 
 

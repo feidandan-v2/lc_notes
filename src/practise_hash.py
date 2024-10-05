@@ -14,7 +14,7 @@ class HashSolution1(object):
             if k != 0:
                 return False
         return True
-    
+
 
 class HashSolution2():
     """两个数组的交集"""
@@ -27,7 +27,7 @@ class HashSolution2():
             if j in nums_dict:
                 nums_set.add(j)
         return list(nums_set)
-    
+
 
 
 class HashSolution3():
@@ -60,8 +60,8 @@ class HashSolution4():
                 return [i, record_dict[target - i_num]]
             else:
                 record_dict[i_num] = i
-        return 
-                
+        return
+
 
 
 class HashSolution5():
@@ -76,7 +76,7 @@ class HashSolution5():
                 return False
         return True
     # 以上不能覆盖所有case，比如 'aaa', 'aab'
-    
+
     def func1(self, ransom:str, magazine:str) -> bool:
         record_nums = [0]*26
         for i in magazine:
@@ -109,7 +109,7 @@ if __name__ == '__main__':
     # C = HashSolution3()
     # res3 = C.func(n)
     # print(res3)
-    
+
     # nums = [2,7,1,10]
     # target = 9
     # D = HashSolution4()

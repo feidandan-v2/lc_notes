@@ -1,4 +1,4 @@
-#  Knuth-Morris-Pratt algorithm 
+#  Knuth-Morris-Pratt algorithm
 #  https://github.com/mission-peace/interview/blob/master/python/string/knuthmorrispratt.py
 
 

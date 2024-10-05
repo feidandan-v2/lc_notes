@@ -1,0 +1,23 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+# 设置默认的阶段为commit，只在提交时进行检查
+default_stages:
+- commit
+
+# 设置默认的语言版本，你也可以在每个repos中单独设置language_version
+default_language_version:
+  python: python3.10
+
+# 设置排除的文件，正则匹配，这个也可以在每个repos中的hooks脚本中单独配置，以灵活实现不同文件对不同规则的检测排除
+exclude: "^$"
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+        args: [--maxkb=51200]
